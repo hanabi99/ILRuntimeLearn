@@ -1,7 +1,6 @@
 using ILRuntime.Mono.Cecil.Pdb;
 using ILRuntime.Runtime.Enviorment;
 using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using UnityEngine;
@@ -12,7 +11,7 @@ public class ILRuntimeMgr : MonoBehaviour
 {
     private static ILRuntimeMgr instance;
 
-    public AppDomain appDomain;
+    public ILRuntime.Runtime.Enviorment.AppDomain appDomain;
     //用于存储加载出来的 两个文件的内存流对象
     private MemoryStream dllStream;
     private MemoryStream pdbStream;
